@@ -112,7 +112,7 @@
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
     <gap:plugin name="cordova-plugin-statusbar" source="npm" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 
     <gap:plugin name="com.phonegap.plugins.pushplugin" />
