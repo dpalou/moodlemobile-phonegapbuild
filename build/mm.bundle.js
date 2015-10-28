@@ -1639,6 +1639,19 @@ angular.module('mm.core')
             }
         });
     };
+    self.getBasePathToDownload = function() {
+        return self.init().then(function() {
+            if (ionic.Platform.isIOS()) {
+                // In iOS we want the internal URL (cdvfile://localhost/persistent/...).
+                return $cordovaFile.checkDir(basePath, '').then(function(dirEntry) {
+                    return dirEntry.toInternalURL();
+                });
+            } else {
+                // In the other platforms we use the basePath as it is (file://...).
+                return basePath;
+            }
+        });
+    };
         self.getTmpFolder = function() {
         return mmFsTmpFolder;
     };
@@ -3821,8 +3834,9 @@ angular.module('mm.core')
     }
         self.downloadFile = function(url, path, background) {
         $log.debug('Downloading file ' + url);
-        return $mmFS.getBasePath().then(function(basePath) {
+        return $mmFS.getBasePathToDownload().then(function(basePath) {
             var tmpPath = basePath + path + '.tmp';
+            console.log('DOWNLOAD TO '+tmpPath);
             return $cordovaFileTransfer.download(url, tmpPath, { encodeURI: false }, true).then(function() {
                 return $mmFS.moveFile(path + '.tmp', path).then(function(movedEntry) {
                     $log.debug('Success downloading file ' + url + ' to ' + path);
