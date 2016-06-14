@@ -26952,6 +26952,9 @@ angular.module('mm.addons.mod_scorm')
                             if (!scorm.packagesize && $scope.errorMessage === '') {
                                 promises.push($mmaModScorm.calculateScormSize(scorm).then(function(size) {
                                     scorm.packagesize = size;
+                                }).catch(function(err) {
+                                    alert('Error calculating SCORM size');
+                                    return $q.reject(err);
                                 }));
                             }
                             setStatusListener();
@@ -27027,7 +27030,10 @@ angular.module('mm.addons.mod_scorm')
                     $scope.currentOrganization.identifier = '';
                 }
             }
-            return loadOrganizationToc($scope.currentOrganization.identifier);
+            return loadOrganizationToc($scope.currentOrganization.identifier).catch(function(message) {
+                alert('Error loading organization TOC in fetchStructure ' + message);
+                return $q.reject(message);
+            });
         });
     }
     function loadOrganizationToc(organizationId) {
@@ -27145,6 +27151,7 @@ angular.module('mm.addons.mod_scorm')
     });
     $scope.loadOrg = function() {
         loadOrganizationToc($scope.currentOrganization.identifier).catch(function(message) {
+            alert('Error loading organization TOC by user' + message);
             return showError(message);
         });
     };
@@ -27258,7 +27265,10 @@ angular.module('mm.addons.mod_scorm')
                     }));
                     return $q.all(promises);
                 });
-            }).catch(showError);
+            }).catch(function(err) {
+                alert('Error fetchdata in player ' + err);
+                return showError(err);
+            });
         });
     }
     function determineAttemptAndMode(attemptsData) {
@@ -27371,7 +27381,10 @@ angular.module('mm.addons.mod_scorm')
                                 offline = true;
                                 $mmaModScormDataModel12.setOffline(true);
                                 return $mmaModScorm.saveTracks(sco.id, attempt, tracks, offline, scorm);
-                            }).catch(showError);
+                            }).catch(function(err) {
+                                alert('Error convert attempt to offline in asset save tracks ' + err);
+                                return showError(err);
+                            });
                         }
                     });
                 }
@@ -27383,7 +27396,10 @@ angular.module('mm.addons.mod_scorm')
     }
     function refreshToc() {
         $mmaModScorm.invalidateAllScormData(scorm.id).finally(function() {
-            fetchToc().catch(showError);
+            fetchToc().catch(function(err) {
+                alert('Error fetchToc in refreshToc ' + err);
+                return showError(err);
+            });
         });
     }
     function setStartTime(scoId) {
@@ -27408,7 +27424,10 @@ angular.module('mm.addons.mod_scorm')
     fetchData().then(function() {
         if (currentSco) {
             var promise = newAttempt ? setStartTime(currentSco.id) : $q.when();
-            return promise.catch(showError).finally(function() {
+            return promise.catch(function(err) {
+                alert('Error setStartTime ' + err);
+                return showError(err);
+            }).finally(function() {
                 loadSco(currentSco);
             });
         }
@@ -27445,7 +27464,10 @@ angular.module('mm.addons.mod_scorm')
         if (data.scormid === scorm.id && !offline) {
             offline = true;
             $timeout(function() {
-                $mmaModScormHelper.convertAttemptToOffline(scorm, attempt).catch(showError).finally(function() {
+                $mmaModScormHelper.convertAttemptToOffline(scorm, attempt).catch(function(err) {
+                    alert('Error convertAttemptToOffline in goOfflineObserver ' + err);
+                    return showError(err);
+                }).finally(function() {
                     refreshToc();
                 });
             }, 200);
@@ -28665,6 +28687,9 @@ angular.module('mm.addons.mod_scorm')
                 result.total = total;
                 return result;
             });
+        }).catch(function(err) {
+            alert('Error get site in getAttemptCount ' + err);
+            return $q.reject(err);
         });
     };
         self.getAttemptGrade = function(scorm, attempt, offline, siteId) {
@@ -28796,8 +28821,15 @@ angular.module('mm.addons.mod_scorm')
                     }
                     return scos;
                 }
+                alert('Error in getScos, no answer received. ');
                 return $q.reject();
+            }).catch(function(err) {
+                alert('Error calling mod_scorm_get_scorm_scoes ' + err);
+                return $q.reject(err);
             });
+        }).catch(function(err) {
+            alert('Error get site in getScos ' + err);
+            return $q.reject(err);
         });
     };
         self.getScosWithData = function(scormId, organization, attempt, offline, ignoreCache, siteId) {
@@ -28909,10 +28941,20 @@ angular.module('mm.addons.mod_scorm')
                         }
                         currentScorm.moduleurl = moduleUrl;
                         return currentScorm;
+                    } else {
+                        alert('Error in getScorm, SCORM not found');
                     }
+                } else {
+                    alert('Error in getScorm, no response');
                 }
                 return $q.reject();
+            }).catch(function(err) {
+                alert('Error calling mod_scorm_get_scorms_by_courses' + err);
+                return $q.reject(err);
             });
+        }).catch(function(err) {
+            alert('Error get site in getScorm' + err);
+            return $q.reject(err);
         });
     }
         self.getScorm = function(courseId, cmid, moduleUrl, siteId) {
@@ -29360,7 +29402,13 @@ angular.module('mm.addons.mod_scorm')
             var db = site.getDb();
             return db.whereEqual(mmaModScormOfflineAttemptsStore, 'scormAndUser', [scormId, userId]).then(function(attempts) {
                 return attempts;
+            }).catch(function(err) {
+                alert('Error get offline attempts ' + err);
+                return $q.reject(err);
             });
+        }).catch(function(err) {
+            alert('Error get site in OFFLINE getAttempts ' + err);
+            return $q.reject(err);
         });
     };
         self.getAttemptSnapshot = function(siteId, scormId, attempt, userId) {
@@ -29394,7 +29442,13 @@ angular.module('mm.addons.mod_scorm')
             } else {
                 where = ['scormUserAttempt', '=', [scormId, userId, attempt]];
             }
-            return site.getDb().query(mmaModScormOfflineTracksStore, where);
+            return site.getDb().query(mmaModScormOfflineTracksStore, where).catch(function(err) {
+                alert('Error querying DB in offline getScormStoredData ' + err);
+                return $q.reject(err);
+            });
+        }).catch(function(err) {
+            alert('Error get site in OFFLINE getScormStoredData ' + err);
+            return $q.reject(err);
         });
     };
         self.getScormUserData = function(siteId, scormId, attempt, userId, scos) {
@@ -29475,6 +29529,9 @@ angular.module('mm.addons.mod_scorm')
                 });
                 return response;
             });
+        }).catch(function(err) {
+            alert('Error get site in OFFLINE getScormUserData ' + err);
+            return $q.reject(err);
         });
     };
         function insertTrackToDB(db, userId, scormId, scoId, attempt, element, value, synchronous) {
@@ -29684,8 +29741,15 @@ angular.module('mm.addons.mod_scorm')
                 if (response && typeof response.attemptscount != 'undefined') {
                     return response.attemptscount;
                 }
+                alert('Error in ONLINE getAttemptCount, no response received ');
                 return $q.reject();
+            }).catch(function(err) {
+                alert('Error calling mod_scorm_get_scorm_attempt_count ' + err);
+                return $q.reject(err);
             });
+        }).catch(function(err) {
+            alert('Error get site in ONLINE getAttemptCount ' + err);
+            return $q.reject(err);
         });
     };
         function getScormUserDataCacheKey(scormId, attempt) {
@@ -29725,8 +29789,15 @@ angular.module('mm.addons.mod_scorm')
                     });
                     return data;
                 }
+                alert('Error in ONLINE getScormUserData, no response received');
                 return $q.reject();
+            }).catch(function(err) {
+                alert('Error calling mod_scorm_get_scorm_user_data ' + err);
+                return $q.reject(err);
             });
+        }).catch(function(err) {
+            alert('Error get site in ONLINE getScormUserData ' + err);
+            return $q.reject(err);
         });
     };
         self.invalidateAttemptCount = function(siteId, scormId, userId) {
