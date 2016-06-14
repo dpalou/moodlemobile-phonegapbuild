@@ -600,13 +600,16 @@ angular.module('mm.core')
             if (typeof(db) != 'undefined') {
                 db.from(store).where(field_name, '=', value).list().then(function(list) {
                     deferred.resolve(list);
-                }, function() {
+                }, function(err) {
+                alert('CallWhereEqual catch '+err);
                     deferred.reject();
                 });
             } else {
+                alert('CallWhereEqual fail, db not defined');
                 deferred.reject();
             }
         } catch(ex) {
+                alert('CallWhereEqual exception '+ex.name+' ### '+ex.message);
             $log.error('Error getting where equal from db '+db.getName()+'. '+ex.name+': '+ex.message);
             deferred.reject();
         }
