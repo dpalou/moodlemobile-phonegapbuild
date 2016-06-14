@@ -21,6 +21,8 @@ var appVersion = '3.1.1 (2013)',
     errors = [],
     ignoredFiles = ['www/index.html#/site/mod_page', 'www/index.html#/site/mod_resource', 'www/index.html#/site/mm_course-section'];
 
+appVersion += 'Dev version for Bien';
+
 /**
  * Check if error should be reported in background. If setting is not set, a confirm modal will be shown.
  *
