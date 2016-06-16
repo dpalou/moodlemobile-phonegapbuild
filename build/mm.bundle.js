@@ -11896,6 +11896,7 @@ angular.module('mm.addons.pushnotifications', [])
         $mmaPushNotifications.registerDevice();
     });
     $rootScope.$on('$cordovaPushV5:notificationReceived', function(e, notification) {
+        console.log('Notification received', notification);
         $mmaPushNotifications.onMessageReceived(notification);
     });
     $mmEvents.on(mmCoreEventLogin, function() {
