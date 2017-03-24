@@ -15,6 +15,9 @@
             <ion-toggle ng-if="showReport" ng-model="reportInBackground" ng-change="reportChanged(reportInBackground)">
                 <p class="item-heading">{{ 'mm.settings.reportinbackground' | translate }}</p>
             </ion-toggle>
+            <ion-toggle ng-model="notificationSound" ng-change="notificationSoundChanged(notificationSound)">
+                <p class="item-heading">{{ 'mm.settings.notificationsound' | translate }}</p>
+            </ion-toggle>
         </ul>
     </ion-content>
 </ion-view>
