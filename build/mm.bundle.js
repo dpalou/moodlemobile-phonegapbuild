@@ -3872,8 +3872,8 @@ angular.module('mm.core')
             notification.data.component = component;
             notification.data.siteid = siteid;
             if (ionic.Platform.isAndroid()) {
-                notification.icon = notification.icon || 'res://icon';
-                notification.smallIcon = notification.smallIcon || 'res://icon';
+                notification.icon = notification.icon || 'file://icon.png';
+                notification.smallIcon = notification.smallIcon || 'file://icon.png';
                 notification.led = notification.led || 'FF9900';
                 notification.ledOnTime = notification.ledOnTime || 1000;
                 notification.ledOffTime = notification.ledOffTime || 1000;
