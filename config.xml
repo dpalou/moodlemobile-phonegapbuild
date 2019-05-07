@@ -160,7 +160,7 @@
     <gap:plugin name="cordova-plugin-zip" source="npm" />
     <gap:plugin name="cordova-sqlite-storage" source="git" version="https://github.com/moodlemobile/Cordova-sqlite-storage.git#moodle-phonegapbuild" />
     <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
-    <gap:plugin name="phonegap-plugin-push" source="git" version="https://github.com/moodlemobile/phonegap-plugin-push.git#moodle-v3">
+    <gap:plugin name="phonegap-plugin-push" source="git" version="https://a341cb2acb6ab104522fc801998c980b6f4fdc3d@github.com/moodlemobile/phonegap-plugin-push-analytics.git#moodle-v3-analytics">
         <variable name="ANDROID_SUPPORT_V13_VERSION" value="27.+" />
         <variable name="FCM_VERSION" value="17.0.+" />
     </gap:plugin>
