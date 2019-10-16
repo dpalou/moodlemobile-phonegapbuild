@@ -172,7 +172,7 @@
     </gap:plugin>
 
     <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:launchMode='singleTop']" mode="merge">
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="true" android:name="MainActivity"></activity>
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="true" android:name="MainActivity" android:resizeableActivity="false"></activity>
     </edit-config>
     <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
         <application android:usesCleartextTraffic="true" />
@@ -198,6 +198,10 @@
     <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
       <string>We need your location so you can attach it as part of your submissions.</string>
     </edit-config>
+
+    <config-file target="*-Info.plist" parent="UIRequiresFullScreen" platform="ios">
+        <true/>
+    </config-file>
 
     <!-- Disable firebase analytics. -->
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
