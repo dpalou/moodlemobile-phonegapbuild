@@ -227,7 +227,10 @@
     </edit-config>
 
     <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
-      <string>We need your location so you can attach it as part of your submissions.</string>
+        <string>We need your location so you can attach it as part of your submissions.</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysUsageDescription">
+        <string>We need your location so you can attach it as part of your submissions.</string>
     </edit-config>
 
     <!-- Disable firebase analytics. -->
