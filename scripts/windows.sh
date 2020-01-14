@@ -10,12 +10,10 @@ npm install -g electron electron-builder@20.41.0 electron-windows-store > /dev/n
 
 electron-builder install-app-deps
 
-if [ ! -z $GIT_ORG_PRIVATE ] && [ ! -z $GIT_TOKEN ] ; then
+if [ ! -z $GIT_TOKEN ] ; then
     # Install certificates.
-    git clone -q https://$GIT_TOKEN@github.com/$GIT_ORG_PRIVATE/bmma-apps-data.git ../apps-data
+    git clone --single-branch --branch desktop https://$GIT_TOKEN@github.com/moodlemobile/bma-apps-data.git ../apps-data
     pushd ../apps-data
-
-    git checkout desktop
 
     OWNER="$(cut -d'/' -f1 <<<"$TRAVIS_REPO_SLUG")"
     if [ ! -z $CSC_KEY_PASSWORD ] ; then
@@ -65,8 +63,8 @@ rm package.jsone
 rm -Rf desktop/dist
 npm run desktop.dist -- -w --x64 --ia32
 
-if [ ! -z $GIT_ORG_PRIVATE ] && [ ! -z $GIT_TOKEN ] ; then
-    git clone -q https://$GIT_TOKEN@github.com/$GIT_ORG_PRIVATE/bma-apps-builds.git ../apps
+if [ ! -z $GIT_TOKEN ] ; then
+    git clone -q https://$GIT_TOKEN@github.com/moodlemobile/bma-apps-builds.git ../apps
 
     mv desktop/store/MoodleDesktop.appx "../apps/MoodleDesktopWin.appx"
     mv desktop/dist/Moodle*.exe "../apps/MoodleDesktopWin.exe"

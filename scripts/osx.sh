@@ -7,12 +7,10 @@ npm install -g electron electron-builder@20.41.0 electron-osx-sign
 
 electron-builder install-app-deps
 
-if [ ! -z $GIT_ORG_PRIVATE ] && [ ! -z $GIT_TOKEN ] ; then
+if [ ! -z $GIT_TOKEN ] ; then
     # Install certificates.
-    git clone -q https://$GIT_TOKEN@github.com/$GIT_ORG_PRIVATE/bmma-apps-data.git ../apps-data
+    git clone --single-branch --branch desktop https://$GIT_TOKEN@github.com/moodlemobile/bma-apps-data.git ../apps-data
     pushd ../apps-data
-
-    git checkout desktop
 
     CSC_KEYCHAIN='/tmp/moodle.keychain'
     KEYCHAIN_PASSWORD='travis'
@@ -35,8 +33,8 @@ CSC_LINK="file://$(pwd)/../apps-data/certs/mac_dev.p12"
 
 npm run desktop.dist -- -m
 
-if [ ! -z $GIT_ORG_PRIVATE ] && [ ! -z $GIT_TOKEN ] ; then
-    git clone -q https://$GIT_TOKEN@github.com/$GIT_ORG_PRIVATE/bma-apps-builds.git ../apps
+if [ ! -z $GIT_TOKEN ] ; then
+    git clone -q https://$GIT_TOKEN@github.com/moodlemobile/bma-apps-builds.git ../apps
 
     app_target='desktop/dist/mas/Moodle Desktop.app'
     electron-osx-sign "${app_target}" --type=development --platform=mas --provisioning-profile=../apps-data/certs/mac_dev.provisionprofile --entitlements=desktop/assets/mac/parent.plist --entitlements-inherit=desktop/assets/mac/child.plist --identity="Mac Developer: Juan Leyva Delgado (6C49E7GDJ4)" --verbose

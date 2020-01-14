@@ -1243,7 +1243,7 @@
     "core.back": "Grįžti",
     "core.block.blocks": "Blokai",
     "core.cancel": "Atšaukti",
-    "core.cannotconnect": "Negalima prisijungti: patikrinkite, ar teisingai įvedėte URL adresą, ar Jūsų svetainė naudoja Moodle {{$a}}. ar vėlesnę versiją.",
+    "core.cannotconnect": "Negalima prisijungti: patikrinkite, ar teisingai įvedėte URL adresą ir ar Jūsų svetainė naudoja Moodle {{$a}} ar vėlesnę versiją.",
     "core.cannotdownloadfiles": "Jūsų mobiliuoju ryšiu negalima atsisiųsti failo. Prašome susisiekti su svetainės administratoriumi.",
     "core.category": "Kursų kategorija",
     "core.choose": "Pasirinkite",

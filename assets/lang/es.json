@@ -810,7 +810,7 @@
     "addon.mod_quiz.showeachpage": "Mostrar una página cada vez",
     "addon.mod_quiz.startattempt": "Comenzar intento",
     "addon.mod_quiz.startedon": "Comenzado el",
-    "addon.mod_quiz.stateabandoned": "Nunca envió",
+    "addon.mod_quiz.stateabandoned": "Nunca enviado",
     "addon.mod_quiz.statefinished": "Finalizado",
     "addon.mod_quiz.statefinisheddetails": "Enviado: {{$a}}",
     "addon.mod_quiz.stateinprogress": "En curso",

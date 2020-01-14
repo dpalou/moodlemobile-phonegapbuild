@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$TRAVIS_BRANCH" == 'desktop' ] ; then
-    if [ ! -z $GIT_ORG_PRIVATE ] && [ ! -z $GIT_TOKEN ] ; then
+    if [ ! -z $GIT_TOKEN ] ; then
         if [ "$TRAVIS_OS_NAME" == 'linux' ] ; then
             echo 'Linux desktop build'
             ./scripts/linux.sh

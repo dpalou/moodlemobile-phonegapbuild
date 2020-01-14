@@ -16,8 +16,8 @@ rm -Rf desktop/dist
 
 npm run desktop.dist -- -l --x64 --ia32
 
-if [ ! -z $GIT_ORG_PRIVATE ] && [ ! -z $GIT_TOKEN ] ; then
-    git clone -q https://$GIT_TOKEN@github.com/$GIT_ORG_PRIVATE/bma-apps-builds.git ../apps
+if [ ! -z $GIT_TOKEN ] ; then
+    git clone -q https://$GIT_TOKEN@github.com/moodlemobile/bma-apps-builds.git ../apps
 
     mv desktop/dist/*.AppImage ../apps
 
