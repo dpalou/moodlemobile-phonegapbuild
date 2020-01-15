@@ -1735,7 +1735,7 @@
     "core.sort": "Järjestä uudelleen",
     "core.sortby": "Lajittele",
     "core.strftimedate": "%d %B %Y",
-    "core.strftimedatefullshort": "%d/%m/%y",
+    "core.strftimedatefullshort": "%d.%m.%y",
     "core.strftimedateshort": "%d %B",
     "core.strftimedatetime": "%d %B %Y, %H:%M",
     "core.strftimedatetimeshort": "%d.%m.%Y %H:%M",
