@@ -582,7 +582,7 @@
     "addon.mod_forum.discussionlistsortbylastpostdesc": "Sorteer op aanmaakdatum van het laatste bericht in aflopende volgorde",
     "addon.mod_forum.discussionlistsortbyrepliesasc": "Sorteer op het aantal antwoorden in oplopende volgorde",
     "addon.mod_forum.discussionlistsortbyrepliesdesc": "Sorteer op het aantal antwoorden in aflopende volgorde",
-    "addon.mod_forum.discussionlocked": "Deze discussie is geblokkeerd, zodat u niet meer kan beantwoorden.",
+    "addon.mod_forum.discussionlocked": "Deze discussie is geblokkeerd, zodat u niet meer kan antwoorden.",
     "addon.mod_forum.discussionpinned": "Vastgepind",
     "addon.mod_forum.discussionsubscription": "Inschrijving discussie",
     "addon.mod_forum.edit": "Wijzig",
