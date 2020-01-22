@@ -90,8 +90,7 @@ var reconnect_CoreLoginReconnectPage = /** @class */ (function () {
     CoreLoginReconnectPage.prototype.ionViewDidLoad = function () {
         var _this = this;
         if (this.siteConfig) {
-            this.identityProviders = this.loginHelper.getValidIdentityProviders(this.siteConfig);
-            this.showForgottenPassword = !this.loginHelper.isForgottenPasswordDisabled(this.siteConfig);
+            this.getDataFromConfig(this.siteConfig);
         }
         this.sitesProvider.getSite(this.siteId).then(function (site) {
             _this.site = {
@@ -111,7 +110,7 @@ var reconnect_CoreLoginReconnectPage = /** @class */ (function () {
                         _this.showSiteAvatar = false;
                         _this.logoUrl = config.logourl || config.compactlogourl;
                     }
-                    _this.showForgottenPassword = !_this.loginHelper.isForgottenPasswordDisabled(config);
+                    _this.getDataFromConfig(_this.siteConfig);
                 }).catch(function () {
                     _this.cancel();
                 });
@@ -122,6 +121,16 @@ var reconnect_CoreLoginReconnectPage = /** @class */ (function () {
             // Shouldn't happen. Just leave the view.
             _this.cancel();
         });
+    };
+    /**
+     * Get some data (like identity providers) from the site config.
+     *
+     * @param config Config to use.
+     */
+    CoreLoginReconnectPage.prototype.getDataFromConfig = function (config) {
+        var disabledFeatures = this.loginHelper.getDisabledFeatures(config);
+        this.identityProviders = this.loginHelper.getValidIdentityProviders(config, disabledFeatures);
+        this.showForgottenPassword = !this.loginHelper.isForgottenPasswordDisabled(config);
     };
     /**
      * Cancel reconnect.
