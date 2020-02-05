@@ -1225,6 +1225,7 @@
     "core.description": "Leírás",
     "core.digitalminor": "Digitálisan kiskorú",
     "core.digitalminor_desc": "Fiók létrehozásához szülőd/gondviselőd lépjen kapcsolatba az alábbi személlyel:",
+    "core.displayoptions": "Megjelenítési lehetőségek",
     "core.done": "Kész",
     "core.download": "Letöltés",
     "core.edit": "Szerkesztés",

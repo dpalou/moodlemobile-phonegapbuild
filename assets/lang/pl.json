@@ -1587,8 +1587,6 @@
     "core.settings.synchronizenow": "Synchronizuj teraz",
     "core.settings.syncsettings": "Ustawienia synchronizacji",
     "core.settings.total": "Razem",
-    "core.settings.versioncode": "Kod wersji",
-    "core.settings.versionname": "Nazwa wersji",
     "core.settings.wificonnection": "Połączenie Wi-Fi",
     "core.sharedfiles.chooseaccountstorefile": "Wybierz konto do przechowywania pliku.",
     "core.sharedfiles.chooseactionrepeatedfile": "Plik o tej nazwie już istnieje. Czy chcesz zastąpić istniejący plik lub zmienić jego nazwę na \"{{$a}}\"?",
