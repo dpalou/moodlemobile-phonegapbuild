@@ -11,6 +11,8 @@ matrix:
   - os: linux
     if: branch = integration
   - os: linux
+    if: branch = freemium
+  - os: linux
     if: branch = desktop
     env:
     - ELECTRON_CACHE=$HOME/.cache/electron
@@ -33,6 +35,7 @@ branches:
   only:
   - master
   - integration
+  - freemium
   - desktop
 
 notifications:
