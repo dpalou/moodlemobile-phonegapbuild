@@ -14,12 +14,14 @@ ANDROID_KEY=`jq -r '.keys .android .all | map(select(.title | startswith("moodle
 
 if [ "$TRAVIS_BRANCH" == 'master' ] ; then
     IOS_KEY=`jq  -r '.keys .ios .all | map(select(.title | startswith("moodlemobile")) | select(.role | contains("dist")))[0].id' /tmp/pgbkeys.json`
+    IOS_UNLOCK=$KEY_UNLOCK
 else
     IOS_KEY=`jq -r '.keys .ios .all | map(select(.title | startswith("moodlemobile")) | select(.role | contains("dev")))[0].id' /tmp/pgbkeys.json`
+    IOS_UNLOCK=$IOS_INT_UNLOCK
 fi
 
 echo "{\"keystore_password\":\"$KEY_UNLOCK\",\"key_password\":\"$CERT_UNLOCK\"}" | pgb unlock android $ANDROID_KEY
-echo "{\"key_password\":\"$KEY_UNLOCK\"}" | pgb unlock ios $IOS_KEY
+echo "{\"key_password\":\"$IOS_UNLOCK\"}" | pgb unlock ios $IOS_KEY
 
 pgb clone --exit-code --no-progress $APP_ID ios-key=$IOS_KEY android-key=$ANDROID_KEY
 
