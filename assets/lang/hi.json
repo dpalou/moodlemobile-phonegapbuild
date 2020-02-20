@@ -665,7 +665,6 @@
     "core.login.visitchangepassword": "क्या आप पासवर्ड बदलने के लिए साइट पर जाना चाहते हैं?",
     "core.login.webservicesnotenabled": "आपकी साइट में वेब सेवाएँ सक्षम नहीं हैं। कृपया अपने साइट व्यवस्थापक से संपर्क करें यदि आपको लगता है कि उन्हें सक्षम होना चाहिए।",
     "core.lostconnection": "आपका प्रमाणीकरण टोकन अमान्य है या समाप्त हो चुका है। आपको साइट को फिर से कनेक्ट करना होगा।",
-    "core.mainmenu.appsettings": "एप्लिकेशन सेटिंग",
     "core.mainmenu.changesite": "साइट बदलें",
     "core.mainmenu.help": "सहायता",
     "core.mainmenu.logout": "लॉग ऑउट",

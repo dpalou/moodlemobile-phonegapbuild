@@ -468,7 +468,6 @@
     "core.login.visitchangepassword": "Möchtest du die Website aufrufen, um das Kennwort zu ändern?",
     "core.login.webservicesnotenabled": "Die Webservices sind für diese Website deaktiviert. Frage den Administrator, wenn du die mobile App aktiviert haben möchtest.",
     "core.lostconnection": "Die Authentifizierung ist abgelaufen oder ungültig. Du musst dich neu anmelden.",
-    "core.mainmenu.appsettings": "Einstellungen",
     "core.mainmenu.changesite": "Website wechseln",
     "core.mainmenu.website": "Website im Browser",
     "core.networkerroriframemsg": "Dieser Inhalt ist offline nicht verfügbar. Du musst online sein und es dann noch einmal versuchen.",
