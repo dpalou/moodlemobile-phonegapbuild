@@ -1630,7 +1630,7 @@
     "core.mainmenu.help": "Помоћ",
     "core.mainmenu.logout": "Одјава",
     "core.mainmenu.website": "Веб сајт",
-    "core.maxsizeandattachments": "Максимална величина за нове датотеке: {{$a.size}}, максималан број прилога: {{$a.attachments}}",
+    "core.maxsizeandattachments": "Максимална величина датотеке: {{$a.size}}, максималан број датотека: {{$a.attachments}}",
     "core.min": "min",
     "core.mins": "min",
     "core.misc": "Разно",

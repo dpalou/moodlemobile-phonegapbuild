@@ -1630,7 +1630,7 @@
     "core.mainmenu.help": "Pomoć",
     "core.mainmenu.logout": "Odjava",
     "core.mainmenu.website": "Veb sajt",
-    "core.maxsizeandattachments": "Maksimalna veličina za nove datoteke: {{$a.size}}, maksimalan broj priloga: {{$a.attachments}}",
+    "core.maxsizeandattachments": "Maksimalna veličina datoteke: {{$a.size}}, maksimalan broj datoteka: {{$a.attachments}}",
     "core.min": "min",
     "core.mins": "min",
     "core.misc": "Razno",

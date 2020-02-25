@@ -1420,7 +1420,7 @@
     "core.login.policyagree": "Musisz zaakceptować te zasady, żeby używać strony. Czy zgadzasz się?",
     "core.login.policyagreement": "Zasady użytkowania serwisu",
     "core.login.policyagreementclick": "Link do strony dotyczącej polityki",
-    "core.login.potentialidps": "Zaloguj się używając swojego konta na:",
+    "core.login.potentialidps": "Zaloguj się używając swojego konta:",
     "core.login.problemconnectingerror": "Mamy problemy z połączeniem",
     "core.login.profileinvaliddata": "Niewłaściwa wartość",
     "core.login.reconnect": "Połącz ponownie",
