@@ -286,7 +286,7 @@
     "addon.messages.numparticipants": "{{$a}} participantes",
     "addon.messages.removecontact": "Eliminar contato",
     "addon.messages.removecontactconfirm": "Tem certeza de que deseja remover {{$a}} dos seus contatos?",
-    "addon.messages.removefromfavourites": "Remover",
+    "addon.messages.removefromfavourites": "Remover estrela da conversa",
     "addon.messages.removefromyourcontacts": "Excluir dos contatos",
     "addon.messages.requests": "Solicitações",
     "addon.messages.requirecontacttomessage": "Você precisa solicitar {{$a}} que te adicione como contato. Só assim você conseguirá enviar uma mensagem para ele.",
