@@ -1146,7 +1146,7 @@
     "core.completion-alt-manual-n-override": "טרם הושלם: {{$a.modname}} (נקבע על ידי {{$a.overrideuser}}). הקליקו לסימון כהושלם.",
     "core.completion-alt-manual-y": "{{$a}} הושלם.   הקליקו לסימון כ\"לא הושלם\"",
     "core.completion-alt-manual-y-override": "הושלם: {{$a.modname}} (נקבע על ידי {{$a.overrideuser}}). הקליקו לסימון כלא הושלם.",
-    "core.confirmdeletefile": "האם הינך בטוח כי ברצונך למחוק את קובץ זה?",
+    "core.confirmdeletefile": "האם הינך בטוח כי ברצונך למחוק קובץ זה?",
     "core.considereddigitalminor": "את/ה נחשב/ת קטין דיגיטלי.",
     "core.content": "תוכן",
     "core.continue": "המשך",
