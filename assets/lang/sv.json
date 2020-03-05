@@ -668,6 +668,7 @@
     "addon.mod_quiz.attemptnumber": "Försök",
     "addon.mod_quiz.attemptquiznow": "Påbörja försök av testet nu",
     "addon.mod_quiz.attemptstate": "Tillstånd",
+    "addon.mod_quiz.clearchoice": "Rensa mitt val",
     "addon.mod_quiz.comment": "Kommentar",
     "addon.mod_quiz.completedon": "Fullgjord den",
     "addon.mod_quiz.confirmclose": "Du håller på att avsluta det här försöket. När Du väl har avslutat försöket kommer Du inte längre att kunna ändra Dina svar.",
