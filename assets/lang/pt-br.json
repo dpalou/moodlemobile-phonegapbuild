@@ -1661,7 +1661,7 @@
     "core.login.connecttomoodle": "Conectar ao moodle",
     "core.login.contactyouradministrator": "Contate o administrador do site para ter mais ajuda.",
     "core.login.contactyouradministratorissue": "Por favor, pergunte ao administrador para verificar o seguinte problema: {{$a}}",
-    "core.login.createaccount": "Cadastrar este novo usuário",
+    "core.login.createaccount": "Criar minha conta",
     "core.login.createuserandpass": "Escolha seu usuário e senha",
     "core.login.credentialsdescription": "Por favor, informe seu nome de usuário e senha para efetuar o login",
     "core.login.emailconfirmsent": "<p>Uma mensagem foi enviada para o seu endereço <b>{{$a}}</b></p><p>Esta mensagem contém instruções para completar o seu cadastro.</p><p>Se você encontrar dificuldades contate o administrador.</p>",
