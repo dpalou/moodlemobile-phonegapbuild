@@ -426,6 +426,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "O limite de palavras para este trabalho é de {{$a.limit}} palavras e você está a tentar submeter {{$a.count}} palavras. Por favor, reveja a sua submissão e tente novamente.",
     "addon.mod_book.errorchapter": "Ocorreu um erro ao ler o capítulo do livro",
     "addon.mod_book.modulenameplural": "Livros",
+    "addon.mod_book.navnexttitle": "Próximo: {{$a}}",
+    "addon.mod_book.navprevtitle": "Anterior: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Capítulos do livro",
     "addon.mod_book.toc": "Índice",
     "addon.mod_chat.beep": "Chamar",

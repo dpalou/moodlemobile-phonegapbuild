@@ -378,6 +378,8 @@
     "addon.mod_assign_submission_onlinetext.pluginname": "Predaja online tekstova",
     "addon.mod_book.errorchapter": "Pogreška pri učitavanju poglavlja u knjizi",
     "addon.mod_book.modulenameplural": "Knjige",
+    "addon.mod_book.navnexttitle": "Dalje:  {{$a}}",
+    "addon.mod_book.navprevtitle": "Natrag: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Poglavlja knjige",
     "addon.mod_book.toc": "Sadržaj",
     "addon.mod_chat.beep": "Bocni",

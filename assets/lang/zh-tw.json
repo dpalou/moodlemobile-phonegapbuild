@@ -388,6 +388,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "{{$a.limit}}為作業字數限制。{{$a.count}}為你要提交的字數。請重新檢視您提交之作業，並再試一次。",
     "addon.mod_book.errorchapter": "讀取章節發生錯誤",
     "addon.mod_book.modulenameplural": "電子書",
+    "addon.mod_book.navnexttitle": "下一章: {{$a}}",
+    "addon.mod_book.navprevtitle": "前一章: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "書籍章節",
     "addon.mod_book.toc": "目錄",
     "addon.mod_chat.beep": "呼叫",

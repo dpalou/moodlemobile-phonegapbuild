@@ -390,6 +390,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Žodžių skaičius šiai užduočiai yra {{$a.limit}} žodžiai, o Jūs bandote pateikti {{$a.count}} žodžius. Prašome peržiūrėti savo pateikimą ir bandyti dar kartą.",
     "addon.mod_book.errorchapter": "Knygos skyriaus skaitymo klaida.",
     "addon.mod_book.modulenameplural": "Knygos",
+    "addon.mod_book.navnexttitle": "Kitas: {{$a}}",
+    "addon.mod_book.navprevtitle": "Ankstesnis: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Knygos skyriai",
     "addon.mod_book.toc": "Turinys",
     "addon.mod_chat.beep": "Pyp",

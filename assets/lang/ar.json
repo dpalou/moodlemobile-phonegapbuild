@@ -256,6 +256,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "حد الكلمات لهذا الواجب هو {{$a.limit}} الكلمات وتحاول إرسال الكلمات {{$a.count}}. يرجى مراجعة التقديم و المحاولة مرة أخرى.",
     "addon.mod_book.errorchapter": "خطأ في قراءة فصل من فصول الكتاب.",
     "addon.mod_book.modulenameplural": "كتب",
+    "addon.mod_book.navnexttitle": "التالي: {{$a}}",
+    "addon.mod_book.navprevtitle": "السابق: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "فصول الكتاب",
     "addon.mod_book.toc": "جدول المحتويات",
     "addon.mod_chat.beep": "نغمة",

@@ -426,6 +426,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Limit počet slov pro tento úkol je {{$a.limit}} slov a vy se pokoušíte odevzdat {{$a.count}} slov. Zkontrolujte prosím své řešení a zkuste to znovu.",
     "addon.mod_book.errorchapter": "Chyba při čtení kapitoly knihy.",
     "addon.mod_book.modulenameplural": "Knihy",
+    "addon.mod_book.navnexttitle": "Další: {{$a}}",
+    "addon.mod_book.navprevtitle": "Předchozí: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Kapitoly knihy",
     "addon.mod_book.toc": "Obsah",
     "addon.mod_chat.beep": "Prozvonit",

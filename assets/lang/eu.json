@@ -426,6 +426,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Zeregin honetarako gehienezko hitz-kopurua {{$a.limit}} da eta zu {{$a.count}} hitz bidaltzen saiatzen ari zara. Mesedez, alda ezazu zure bidalketa eta ondoren saiatu berriz.",
     "addon.mod_book.errorchapter": "Errorea liburuaren atala irakurtzean.",
     "addon.mod_book.modulenameplural": "Liburuak",
+    "addon.mod_book.navnexttitle": "Hurrengoa: {{$a}}",
+    "addon.mod_book.navprevtitle": "Aurrekoa: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Liburu-atalak",
     "addon.mod_book.toc": "Eduki-taula",
     "addon.mod_chat.beep": "Abisua",

@@ -364,6 +364,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "הגבלת מילים עבור מטלה זו היא {{$a.limit}} מילים והינך מנסה להקליק {{$a.count}}  מילים. יש לבדוק מחדש ולהגיש שוב לפי ההגבלת המילים.",
     "addon.mod_book.errorchapter": "שגיאה בעת קריאת הפרק",
     "addon.mod_book.modulenameplural": "ספרים",
+    "addon.mod_book.navnexttitle": "הבא: {{$a}}",
+    "addon.mod_book.navprevtitle": "הקודם: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "פרקי הספר",
     "addon.mod_book.toc": "תוכן עניינים",
     "addon.mod_chat.beep": "ציפצוף",

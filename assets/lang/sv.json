@@ -375,6 +375,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Maxgränsen i denna uppgift är {{$a.limit}} ord och du försöker lämna in  {{$a.count}} ord. Var god och korta ned din uppgift och försök igen.",
     "addon.mod_book.errorchapter": "Fel vid läsning av bokkapitel",
     "addon.mod_book.modulenameplural": "Böcker",
+    "addon.mod_book.navnexttitle": "Nästa: {{$a}}",
+    "addon.mod_book.navprevtitle": "Föregående: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Bokkapitel",
     "addon.mod_book.toc": "Innehållsförteckning",
     "addon.mod_chat.beep": "pipsignal",

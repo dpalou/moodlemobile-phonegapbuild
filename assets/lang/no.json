@@ -403,6 +403,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Ordgrensen for denne innleveringen er {{$a.limit}} ord, og du prøver å levere en besvarelsen med {{$a.count}} ord. Vennligst se over besvarelsen din og prøv på nytt.",
     "addon.mod_book.errorchapter": "Feil ved lesing av bokkapitlet",
     "addon.mod_book.modulenameplural": "Bøker",
+    "addon.mod_book.navnexttitle": "Neste: {{$a}}",
+    "addon.mod_book.navprevtitle": "Forrige: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Bokkapitler",
     "addon.mod_book.toc": "Innholdsfortegnelse",
     "addon.mod_chat.beep": "tut",

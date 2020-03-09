@@ -426,6 +426,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "El límite de palabras para esta entrada es de {{$a.limit}} palabras y estas intentando de enviar {{$a.count}} palabras. Por favor, revisa el contenido e inténtalo de nuevo.",
     "addon.mod_book.errorchapter": "Error al leer el capítulo del libro.",
     "addon.mod_book.modulenameplural": "Libros",
+    "addon.mod_book.navnexttitle": "Siguiente: {{$a}}",
+    "addon.mod_book.navprevtitle": "Anterior: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Capítulos del libro",
     "addon.mod_book.toc": "Tabla de contenidos",
     "addon.mod_chat.beep": "Beep",

@@ -426,6 +426,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Die maximale Anzahl von Wörtern für diese Aufgabenlösung ist {{$a.limit}}. Ihre Antwort hat {{$a.count}} Wörter. Verkürzen Sie Ihren Text und speichern Sie ihn dann erneut.",
     "addon.mod_book.errorchapter": "Fehler beim Lesen des Kapitels",
     "addon.mod_book.modulenameplural": "Bücher",
+    "addon.mod_book.navnexttitle": "Nächster: {{$a}}",
+    "addon.mod_book.navprevtitle": "Vorheriger: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Buchkapitel",
     "addon.mod_book.toc": "Inhaltsverzeichnis",
     "addon.mod_chat.beep": "Beep",

@@ -353,6 +353,8 @@
     "addon.mod_assign_submission_onlinetext.pluginname": "Tiešsaistes teksta iesniegumi",
     "addon.mod_book.errorchapter": "Kļūda, nolasot grāmatas nodaļu.",
     "addon.mod_book.modulenameplural": "Grāmatas",
+    "addon.mod_book.navnexttitle": "Nākamā nodaļa: {{$a}}",
+    "addon.mod_book.navprevtitle": "Iepriekšējā nodaļa: {{$a}}",
     "addon.mod_book.toc": "Satura rādītājs",
     "addon.mod_chat.beep": "Signāls",
     "addon.mod_chat.chatreport": "Tērzēšanas sesijas",

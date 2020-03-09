@@ -417,6 +417,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Ograničenje broja reči za ovaj zadatak je {{$a.limit}} reči, a vi pokušavate da pošaljete {{$a.count}} reči. Molimo, pregledajte svoj rad i pokušajte ponovo.",
     "addon.mod_book.errorchapter": "Greška prilikom učitavanja poglavlja knjige.",
     "addon.mod_book.modulenameplural": "Knjige",
+    "addon.mod_book.navnexttitle": "Sledeće: {{$a}}",
+    "addon.mod_book.navprevtitle": "Prethodno: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Poglavlja knjige",
     "addon.mod_book.toc": "Sadržaj",
     "addon.mod_chat.beep": "Zvučni signal",

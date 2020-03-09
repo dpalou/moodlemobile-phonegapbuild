@@ -329,6 +329,8 @@
     "addon.mod_assign_submission_onlinetext.pluginname": "نوشتن متن برخط",
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "محدودیت کلمه برای این تکلیف {{$a.limit}} کلمه است در حالی که شما در حال ارسال {{$a.count}} کلمه هستید. لطفا پاسختان را بررسی کرده و دوباره ارسال کنید.",
     "addon.mod_book.modulenameplural": "کتاب‌ها",
+    "addon.mod_book.navnexttitle": "صفحهٔ بعد: {{$a}}",
+    "addon.mod_book.navprevtitle": "صفحهٔ قبل: {{$a}}",
     "addon.mod_book.toc": "فهرست",
     "addon.mod_chat.beep": "بوق",
     "addon.mod_chat.chatreport": "جلسات گفتگو",

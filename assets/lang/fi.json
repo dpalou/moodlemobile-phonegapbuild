@@ -398,6 +398,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Tämän tehtävän sanamäärälle on laitettu rajaksi {{$a.limit}} sanaa. Yrität palauttaa  {{$a.count}} sanan mittaista vastausta. Lyhennä vastaustasi ja palauta se sitten uudestaan.",
     "addon.mod_book.errorchapter": "Virhe kirjan luvun lukemisessa.",
     "addon.mod_book.modulenameplural": "Kirjat",
+    "addon.mod_book.navnexttitle": "Seuraava: {{$a}}",
+    "addon.mod_book.navprevtitle": "Edellinen: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Kirjan luvut",
     "addon.mod_book.toc": "Sisällysluettelo",
     "addon.mod_chat.beep": "kutsu",

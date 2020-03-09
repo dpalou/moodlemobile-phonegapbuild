@@ -387,6 +387,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Для этого задания задано ограничение максимального количества слов - {{$a.limit}}. Вы пытаетесь представить {{$a.count}} слово(а). Проверьте свой текст и попробуйте еще раз.",
     "addon.mod_book.errorchapter": "Ошибка чтения главы книги.",
     "addon.mod_book.modulenameplural": "Книги",
+    "addon.mod_book.navnexttitle": "Далее: {{$a}}",
+    "addon.mod_book.navprevtitle": "Назад: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Главы книги",
     "addon.mod_book.toc": "Оглавление",
     "addon.mod_chat.beep": "Сигнал",

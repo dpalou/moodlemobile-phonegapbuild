@@ -426,6 +426,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Het aantal woorden voor deze opdracht is beperkt tot  {{$a.limit}} woorden en je probeert een opdracht met {{$a.count}} woorden in te sturen. Herbekijk je werk en probeer opnieuw.",
     "addon.mod_book.errorchapter": "Fout bij het lezen van het hoofdstuk",
     "addon.mod_book.modulenameplural": "Boeken",
+    "addon.mod_book.navnexttitle": "Volgende: {{$a}}",
+    "addon.mod_book.navprevtitle": "Vorige: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Boek hoofdstukken",
     "addon.mod_book.toc": "Inhoudsopgave",
     "addon.mod_chat.beep": "Piep",

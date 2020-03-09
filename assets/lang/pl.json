@@ -374,6 +374,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Pole Tekst online dla tego zadania ma wyznaczony limit {{$a.limit}} wpisanych słów. Próbujesz wpisać {{$a.count}} słów. Sprawdź swój wpis i spróbuj ponownie.",
     "addon.mod_book.errorchapter": "Błąd podczas odczytu książki",
     "addon.mod_book.modulenameplural": "Książki",
+    "addon.mod_book.navnexttitle": "Następne: {{$a}}",
+    "addon.mod_book.navprevtitle": "Poprzednie: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Rozdziały książki",
     "addon.mod_book.toc": "Spis treści",
     "addon.mod_chat.beep": "rozmawia",

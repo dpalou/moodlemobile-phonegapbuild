@@ -426,6 +426,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Le nombre maximal de mots pour ce devoir est de {{$a.limit}} mots, alors que vous essayez de remettre un devoir de {{$a.count}} mots. Veuillez retravailler votre devoir et essayer à nouveau.",
     "addon.mod_book.errorchapter": "Erreur lors de la lecture du chapitre",
     "addon.mod_book.modulenameplural": "Livres",
+    "addon.mod_book.navnexttitle": "Suivant : {{$a}}",
+    "addon.mod_book.navprevtitle": "Précédent : {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Chapitres du livre",
     "addon.mod_book.toc": "Table des matières",
     "addon.mod_chat.beep": "Bip",

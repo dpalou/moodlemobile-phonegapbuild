@@ -371,6 +371,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "A feladathoz tartozó szókorlát {{$a.limit}} szó, Ön pedig  {{$a.count}}  szót kíván leadni. Vizsgálja felül leadandó munkáját, majd próbálkozzék újból.",
     "addon.mod_book.errorchapter": "Hiba a fejezet olvasása közben.",
     "addon.mod_book.modulenameplural": "Könyvek",
+    "addon.mod_book.navnexttitle": "Következő: {{$a}}",
+    "addon.mod_book.navprevtitle": "Előző: {{$a}}",
     "addon.mod_book.tagarea_book_chapters": "Könyvfejezetek",
     "addon.mod_book.toc": "Tartalomjegyzék",
     "addon.mod_chat.beep": "Hangjelzés",

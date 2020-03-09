@@ -304,6 +304,8 @@
     "addon.mod_assign_submission_onlinetext.wordlimitexceeded": "Bu ödev için kelime sınırı {{$a limit->}} kelimeleri ve {{$a.count}} kelimeyi göndermeye çalışıyorsunuz. Lütfen gönderinizi gözden geçirin ve yeniden deneyin.",
     "addon.mod_book.errorchapter": "Kitabın bölümünü okurken hata oluştu.",
     "addon.mod_book.modulenameplural": "Kitaplar",
+    "addon.mod_book.navnexttitle": "Sonraki: {{$a}}",
+    "addon.mod_book.navprevtitle": "Önceki: {{$a}}",
     "addon.mod_book.toc": "İçindekiler",
     "addon.mod_chat.beep": "biip",
     "addon.mod_chat.chatreport": "Sohbet oturumları",
