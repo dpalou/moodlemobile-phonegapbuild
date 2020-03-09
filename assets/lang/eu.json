@@ -1837,7 +1837,7 @@
     "core.openfullimage": "Klik egin hemen irudia jatorrizko tamainan ikusteko.",
     "core.openinbrowser": "Ireki nabigatzailean",
     "core.othergroups": "Beste taldeak",
-    "core.pagea": "{{$a}} orria",
+    "core.pagea": "{{$a}}. orria",
     "core.parentlanguage": "",
     "core.paymentinstant": "Erabili beheko botoia ordaindu eta minutu gutxitan matrikulatzeko!",
     "core.percentagenumber": "%{{$a}}",
