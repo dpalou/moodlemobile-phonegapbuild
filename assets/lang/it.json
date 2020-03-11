@@ -434,7 +434,7 @@
     "addon.mod_chat.nosessionsfound": "Non è stata trovata nessuna sezione",
     "addon.mod_chat.saidto": "ha detto a",
     "addon.mod_chat.send": "Invia",
-    "addon.mod_chat.sessionstart": "La prossima sessione di chat inizierà il {{$a}}, ({{$a.fromnow}} da adesso)",
+    "addon.mod_chat.sessionstart": "La prossima sessione di chat inizierà il {{$a.date}}, ({{$a.fromnow}} da adesso)",
     "addon.mod_chat.talk": "Parla",
     "addon.mod_chat.viewreport": "Visualizza le sessioni già svolte",
     "addon.mod_choice.cannotsubmit": "Si è verificato un errore durante l'invio della scelta. Per favore riprova.",
