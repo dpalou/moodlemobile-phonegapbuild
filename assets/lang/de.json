@@ -368,7 +368,7 @@
     "addon.mod_assign.markingworkflowstatenotmarked": "Unbewertet",
     "addon.mod_assign.markingworkflowstatereadyforrelease": "Fertig zur Freigabe",
     "addon.mod_assign.markingworkflowstatereadyforreview": "Bewertung abgeschlossen",
-    "addon.mod_assign.markingworkflowstatereleased": "Freigegeben (Teilnehmer/innen informieren)",
+    "addon.mod_assign.markingworkflowstatereleased": "Freigegeben (Teilnehmer können ihre Bewertung einsehen)",
     "addon.mod_assign.modulenameplural": "Aufgaben",
     "addon.mod_assign.multipleteams": "Mitglied in mehreren Gruppen",
     "addon.mod_assign.multipleteams_desc": "Diese Aufgabe wird in Gruppen abgegeben. Sie sind Mitglied in mehr als einer Gruppe. Um ihre Einreichung korrekt Ihrer Gruppe zuordnen zu können, müssen Sie Mitglied in genau einer Gruppe sein. Kontaktieren Sie Ihre Trainer/innen, um Ihre Gruppenzugehörigkeit zu aktualisieren.",

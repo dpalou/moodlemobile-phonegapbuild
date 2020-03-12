@@ -277,7 +277,7 @@
     "addon.messages.you": "Ty:",
     "addon.messages.youhaveblockeduser": "Zablokowałeś tego użytkownika",
     "addon.messages.yourcontactrequestpending": "Twoja prośba o kontakt oczekuje na {{$a}}",
-    "addon.mod_assign.addattempt": "Zezwalaj na inną próbę",
+    "addon.mod_assign.addattempt": "Zezwól na kolejną próbę",
     "addon.mod_assign.addnewattempt": "Dodaj nową wersję pracy",
     "addon.mod_assign.addnewattemptfromprevious": "Dodaj nową wersję pracy na podstawie pracy przesłanej poprzednio",
     "addon.mod_assign.addsubmission": "Dodaj zadanie",
