@@ -1347,7 +1347,7 @@
     "core.comments.comments": "Comentaris",
     "core.comments.commentscount": "Comentaris ({{$a}})",
     "core.comments.commentsnotworking": "No es poden obtenir els comentaris",
-    "core.comments.deletecommentbyon": "Suprimeix el comentari publicat per {{$a.user}} a les {{$a.time}}",
+    "core.comments.deletecommentbyon": "Suprimeix el comentari publicat per {{$a.user}} el {{$a.time}}",
     "core.comments.eventcommentcreated": "Comentari creat",
     "core.comments.eventcommentdeleted": "Comentari suprimit",
     "core.comments.nocomments": "Sense comentaris",
