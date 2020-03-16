@@ -20,7 +20,7 @@
     "addon.badges.issuerurl": "発行者URL",
     "addon.badges.language": "言語",
     "addon.badges.noalignment": "このバッジには指定された外部スキルまたは標準はありません。",
-    "addon.badges.nobadges": "利用できるバッジはありません。",
+    "addon.badges.nobadges": "取得できるバッジはありません。",
     "addon.badges.norelated": "このバッジには関連バッジはありません。",
     "addon.badges.recipientdetails": "取得者詳細",
     "addon.badges.relatedbages": "関連バッジ",

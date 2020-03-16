@@ -621,7 +621,7 @@
     "addon.mod_forum.replyplaceholder": "Schreiben Sie Ihre Antwort …",
     "addon.mod_forum.subject": "Betreff",
     "addon.mod_forum.tagarea_forum_posts": "Forenbeiträge",
-    "addon.mod_forum.thisforumhasduedate": "Das Fälligkeitsdatum, um diesem Forum zu schreiben, ist {{$a}}.",
+    "addon.mod_forum.thisforumhasduedate": "Das Fälligkeitsdatum, um in dieses Forum zu schreiben, ist {{$a}}.",
     "addon.mod_forum.thisforumisdue": "Das Fälligkeitsdatum, um diesem Forum zu schreiben, war {{$a}}.",
     "addon.mod_forum.unlockdiscussion": "Dieses Thema entsperren",
     "addon.mod_forum.unpindiscussion": "Dieses Thema abpinnen",
