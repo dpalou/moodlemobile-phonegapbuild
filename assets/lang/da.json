@@ -911,7 +911,7 @@
     "addon.mod_workshop.assignedassessments": "Tildelte opgaver at vurdere",
     "addon.mod_workshop.assignedassessmentsnone": "Du har ingen tildelt aflevering at vurdere",
     "addon.mod_workshop.conclusion": "Konklusion",
-    "addon.mod_workshop.createsubmission": "Begynd udarbejdelse af din aflevering",
+    "addon.mod_workshop.createsubmission": "Tilføj en aflevering",
     "addon.mod_workshop.deletesubmission": "Slet afleveringen",
     "addon.mod_workshop.editsubmission": "Rediger opgavebesvarelse",
     "addon.mod_workshop.feedbackauthor": "Feedback til besvarelsen",
