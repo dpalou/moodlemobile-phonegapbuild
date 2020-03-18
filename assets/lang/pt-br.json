@@ -1747,7 +1747,7 @@
     "core.mainmenu.help": "Ajuda",
     "core.mainmenu.logout": "Sair",
     "core.mainmenu.website": "Site",
-    "core.maxsizeandattachments": "Tamanho máximo para novos arquivos: {{$a.size}}, máximo de anexos: {{$a.attachments}}",
+    "core.maxsizeandattachments": "Tamanho máximo para arquivos: {{$a.size}}, número máximo de anexos: {{$a.attachments}}",
     "core.min": "minuto",
     "core.mins": "minutos",
     "core.misc": "Diversidade",

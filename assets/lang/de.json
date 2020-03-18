@@ -454,7 +454,7 @@
     "addon.mod_chat.send": "Senden",
     "addon.mod_chat.sessionstart": "Der nächste Chat beginnt {{$a.date}}, (also in {{$a.fromnow}})",
     "addon.mod_chat.showincompletesessions": "Unvollständige Sessions anzeigen",
-    "addon.mod_chat.talk": "Sprechen",
+    "addon.mod_chat.talk": "Talk",
     "addon.mod_chat.viewreport": "Chat-Protokolle anzeigen",
     "addon.mod_choice.cannotsubmit": "Ihre Auswahl konnte nicht gespeichert werden. Versuchen Sie es noch einmal.",
     "addon.mod_choice.choiceoptions": "Abstimmoptionen",
