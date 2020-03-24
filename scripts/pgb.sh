@@ -12,7 +12,7 @@ pgb keys --json > /tmp/pgbkeys.json
 
 ANDROID_KEY=`jq -r '.keys .android .all | map(select(.title | startswith("moodlemobile")))[0].id' /tmp/pgbkeys.json`
 
-if [ "$TRAVIS_BRANCH" == 'master' ] ; then
+if [ "$TRAVIS_BRANCH" == 'freemium-master' ] ; then
     IOS_KEY=`jq  -r '.keys .ios .all | map(select(.title | startswith("moodlemobile")) | select(.role | contains("dist")))[0].id' /tmp/pgbkeys.json`
     IOS_UNLOCK=$KEY_UNLOCK
 else
@@ -25,7 +25,7 @@ echo "{\"key_password\":\"$IOS_UNLOCK\"}" | pgb unlock ios $IOS_KEY
 
 pgb clone --exit-code --no-progress $APP_ID ios-key=$IOS_KEY android-key=$ANDROID_KEY
 
-if [ ! -z $GIT_TOKEN ] && [ "$TRAVIS_BRANCH" == 'master' ] ; then
+if [ ! -z $GIT_TOKEN ] && [ "$TRAVIS_BRANCH" == 'freemium-master' ] ; then
     git clone -q https://$GIT_TOKEN@github.com/moodlemobile/bma-apps-builds.git ../apps
     cd ../apps
 

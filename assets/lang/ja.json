@@ -295,7 +295,7 @@
     "addon.messages.unblockuser": "ユーザのブロックを解除する",
     "addon.messages.unblockuserconfirm": "本当に {{$a}} をブロック解除してもよろしいですか?",
     "addon.messages.unmuteconversation": "ミュート解除",
-    "addon.messages.useentertosend": "送信するにはEnterを使用する",
+    "addon.messages.useentertosend": "Enterで送信する",
     "addon.messages.userwouldliketocontactyou": "{{$a}} があなたにコンタクトしたいようです。",
     "addon.messages.warningmessagenotsent": "ユーザ {{user}} へのメッセージ送信ができませんでした。 {{error}}",
     "addon.messages.wouldliketocontactyou": "あなたへのコンタクト希望",

@@ -7,11 +7,9 @@ node_js: 11
 matrix:
   include:
   - os: linux
-    if: branch = master
-  - os: linux
-    if: branch = integration
-  - os: linux
     if: branch = freemium
+  - os: linux
+    if: branch = freemium-master
   - os: linux
     if: branch = desktop
     env:
@@ -33,9 +31,8 @@ matrix:
 
 branches:
   only:
-  - master
-  - integration
   - freemium
+  - freemium-master
   - desktop
 
 notifications:
