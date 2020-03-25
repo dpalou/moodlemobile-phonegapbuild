@@ -404,7 +404,7 @@
     "addon.mod_assign.submissionteam": "Taldea",
     "addon.mod_assign.submitassignment": "Bidali zeregina",
     "addon.mod_assign.submitassignment_help": "Behin zeregina bidalita, ezin izango duzu aldaketarik egin.",
-    "addon.mod_assign.submittedearly": "Bidalketagaraiz bidali zen: {{$a}}",
+    "addon.mod_assign.submittedearly": "Bidalketa epea amaitu baino {{$a}} lehenago bidali zen",
     "addon.mod_assign.submittedlate": "Zeregina berandu bidali zen: {{$a}}",
     "addon.mod_assign.timemodified": "Azken aldaketa",
     "addon.mod_assign.timeremaining": "Geratzen den denbora",
