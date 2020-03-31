@@ -143,6 +143,8 @@
     "addon.calendar.typecategory": "Evento di categoria",
     "addon.calendar.typeclose": "Chiudi evento",
     "addon.calendar.typecourse": "Evento di corso",
+    "addon.calendar.typedue": "Evento in scadenza",
+    "addon.calendar.typegradingdue": "Valutazione in scadenza",
     "addon.calendar.typegroup": "Evento di gruppo",
     "addon.calendar.typeopen": "Apri evento",
     "addon.calendar.typesite": "Evento globale",

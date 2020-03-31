@@ -1345,7 +1345,7 @@
     "core.comments.comments": "Comentarios",
     "core.comments.commentscount": "Comentarios ({{$a}})",
     "core.comments.commentsnotworking": "Los comentarios no se pueden recuperar.",
-    "core.comments.deletecommentbyon": "El comentario borrado fue posteado por  {{$a.user}} a las {{$a.time}}",
+    "core.comments.deletecommentbyon": "Borrar el comentario publicado por  {{$a.user}} el {{$a.time}}",
     "core.comments.eventcommentcreated": "Comentario creado",
     "core.comments.eventcommentdeleted": "Comentario eliminado",
     "core.comments.nocomments": "No hay comentarios",
